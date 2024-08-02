@@ -1,0 +1,45 @@
+.allVideoLabel {
+  text-align: center;
+  margin: 5% auto;
+  font-size: 2.2em;
+  border-bottom: 2px solid gray;
+  width: fit-content;
+  padding-inline: 20px;
+  padding-bottom: 5px;
+}
+.videoContainer {
+  width: 100%;
+  padding-inline: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-basis: 25%;
+}
+
+.videoCard {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.videoCard h3 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.videoCard p {
+  font-size: 1.2em;
+  color: gray;
+  margin-top: 5px;
+}
+
+.videoCard img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.videoCard img:hover {
+  transform: scale(1.03);
+}

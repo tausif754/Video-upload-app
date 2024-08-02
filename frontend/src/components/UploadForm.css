@@ -1,0 +1,193 @@
+/* .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.title input {
+  margin-bottom: 15px;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline: tomato;
+}
+
+.description {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+} */
+
+.uploadFormContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customImageUpload {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  overflow: hidden;
+  border: 1px solid gray;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.customImageUpload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.customImageUpload label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 242, 242); /* Change to desired background color */
+  color: rgb(73, 73, 73); /* Change to desired text color */
+  text-align: center;
+  line-height: 40px; /* Same as the height of the .custom-file-input */
+  cursor: pointer;
+  border-radius: 4px; /* Optional: Add border radius */
+}
+
+.form {
+  /* background-color: rgb(90, 228, 228); */
+  border: 1px solid gray;
+  padding: 30px 20px;
+  width: 30%;
+  min-height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1em;
+  gap: 20px;
+  border-radius: 10px;
+}
+.customImageUpload input[type="file"]:focus + label {
+  outline: 2px solid #fffaaa; /* Change to desired focus outline color */
+  outline: -webkit-focus-ring-color auto 5px; /* Optional: WebKit focus style */
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.fieldLabel {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+.fieldLableDesc {
+  align-self: flex-start;
+  padding-top: 10px;
+}
+.fieldInput {
+  flex: 1;
+}
+.fieldInput > input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  background-color: rgb(242, 242, 242);
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.fieldInput > textarea {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  overflow: auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  outline: none;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+}
+.btn {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  background-color: rgb(241, 80, 52);
+}
